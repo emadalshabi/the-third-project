@@ -1,0 +1,44 @@
+.con{
+    background-color: rgb(245, 249, 136);
+    border: 3px solid red;
+    border-radius: 30px ;
+    display: block;
+    padding: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    
+  
+  }
+  input {
+    width: 100%;
+    padding: 10px;
+    border: 3px solid red;
+    border-radius: 10px;
+    box-sizing: border-box;
+    margin-top: 5px;
+    margin-bottom: 15px;
+  }
+  #btn{
+      background-color: rgb(20, 210, 103);
+  }
+  table, td, th {
+    border: 5px solid rgb(17, 16, 14);
+  }
+  
+  table {
+    border-collapse: collapse;
+    width: 100%;
+
+  }
+  
+  th {
+    height: 40px;
+  }
+#myButton {
+    background-color: darkviolet;
+    display: flex;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    width:10%;
+}

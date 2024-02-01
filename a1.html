@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="a1.css">
+</head>
+<body>
+
+    <div class="con">
+        <h2>write your information :</h2>
+		<label for="fname">FIRST NAME :</label>
+		<input type="text" name="fname" id="fname">
+		<label for="lname">LAST NAME :</label>
+		<input type="text" name="lname" id="lname">
+		<label for="email">EMAIL :</label>
+		<input type="text" name="email" id="email">
+		<label for="age">AGE :</label>
+		<input type="text" name="age" id="age">
+		<input type="button" name="button" id="btn" value="Add" onclick="AddRow()">
+
+
+	</div>
+
+		<table id="output">
+
+				<tr>
+					<th>First Name</th>
+					<th>Last Name</th>
+					<th>Email</th>
+					<th>Age</th>
+				</tr>
+
+		</table>
+
+
+        <button id="myButton">submit the form</button>
+
+
+    <script src="a1js.js"></script>
+</body>
+</html>
