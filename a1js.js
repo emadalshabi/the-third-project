@@ -1,41 +1,47 @@
- var list1 = [];
- var list2 = [];
- var list3 = [];
- var list4 = [];
 
- var n = 1;
- var x = 0;
+const firstnameinput = document. getElementById("firstname");
+const lastnameinput = document. getElementById("lastname");
+const emailinput = document. getElementById("email");
+const ageinput = document. getElementById("age");
+const savebutton = document. getElementById("save");
 
-	function AddRow(){
+        
+savebutton.addEventListener("click", function(e){
+	e.preventDefault();
+const newTr = document.createElement("tr");
+document.getElementById("tbody").append(newTr);
 
-			var AddRown = document.getElementById('output');
-			var NewRow = AddRown.insertRow(n);
+const newfirstname = document.createElement("td");
+newfirstname.innerText = firstnameinput.value;
+newTr.append(newfirstname);
 
-			list1[x] = document.getElementById("fname").value;
-			list2[x] = document.getElementById("lname").value;
-			list3[x] = document.getElementById("email").value;
-			list4[x] = document.getElementById("age").value;
+const newlastname = document.createElement("td");
+newlastname.innerText = lastnameinput.value;
+newTr.append(newlastname);
 
-			var cel1 = NewRow.insertCell(0);
-			var cel2 = NewRow.insertCell(1);
-			var cel3 = NewRow.insertCell(2);
-			var cel4 = NewRow.insertCell(3);
+const newemail = document.createElement("td");
+newemail.innerText = emailinput.value;
+newTr.append(newemail);
 
-			cel1.innerHTML = list1[x];
-			cel2.innerHTML = list2[x];
-			cel3.innerHTML = list3[x];
-			cel4.innerHTML = list4[x];
+const newage = document.createElement("td");
+newage.innerText = ageinput.value;
+newTr.append(newage);
 
-			n++;
-			x++;
-   }
-
-var button = document.getElementById('myButton');
-
-button.addEventListener('click', function() {
-  document.write('form have been submited');
 });
 
 
+let sum = 0;
 
-        
+for (let i = 1; i <= 3; i++) {
+    let userInput = parseFloat(prompt(`Enter number #${i}:`));
+
+    if (isNaN(userInput)) {
+        console.log("Invalid input. Please enter a valid number.");
+        break;
+    }
+
+    sum += userInput;
+}
+
+document.write(`The sum of the entered numbers is: ${sum}`);
+

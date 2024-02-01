@@ -18,8 +18,10 @@
     margin-top: 5px;
     margin-bottom: 15px;
   }
-  #btn{
+  #save{
       background-color: rgb(20, 210, 103);
+      width: 30%;
+      font-size: 20px;
   }
   table, td, th {
     border: 5px solid rgb(17, 16, 14);
@@ -34,11 +36,3 @@
   th {
     height: 40px;
   }
-#myButton {
-    background-color: darkviolet;
-    display: flex;
-    justify-content: center;
-    margin-left: auto;
-    margin-right: auto;
-    width:10%;
-}
